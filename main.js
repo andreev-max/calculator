@@ -121,54 +121,10 @@ function square() {
     }
     display.value = MemoryCurrentNumber;
 
-
 };
 
-function getFactorial(n) {
-    const arr = Array.apply(null, {
-        length: n + 1
-    }).map(Number.call, Number);
-    arr.splice(0, 1);
-    return arr.reduce((sum, current) => sum * current, 1);
-}
-
-function getIntervalArray(start, end) {
-    const arr = [start, ...end];
-    return arr;
-}
-
-function isInsideCircle(circle, point) {
-    const a = circle.center.x - circle.radius;
-    const b = circle.center.x + circle.radius;
-    const c = circle.center.y - circle.radius;
-    const d = circle.center.y + circle.radius;
-    if (point.x > a && point.x < b && point.y > c && point.y < d) return true;
-    return false;
-}
-
-function getDigitalRoot(n) {
-    return (n - 1) % 9 + 1
-}
-
-const num = BigInt('1233456789098765432');
-const num2 = BigInt('1234567876543')
-const regexp = 'f';
-const str = 'function'
-
-let fruit = 'pipec'
-const max = {
-    age: 24,
-    0: 'programmist',
-    [fruit]: 'apple'
-}
-
-
-console.log(t)
-function repeat3() {
-    console.log(t)
-}
-const t = 42
-repeat3()
-
-
-//console.log(getDigitalRoot(87354));
+function negative() {
+    var localNegativeMemory = display.value;
+    localNegativeMemory = -localNegativeMemory;
+    display.value = localNegativeMemory;
+};
