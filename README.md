@@ -11,3 +11,4 @@ Task: ***https://github.com/rolling-scopes-school/tasks/blob/master/tasks/ready-
 Score: 40 / 40
 
 ## Old deploy: ***https://nazdac-old-calculator.netlify.app/***
+
