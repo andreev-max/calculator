@@ -12,86 +12,86 @@
   <main class="main">
     <div class="calc">
       <div class="calc-display">
-        <input disabled type="text" id="display" value="0" name="" placeholder="000000000000000000"
+        <input disabled type="text" id="display" value="0" placeholder="000000000000000000"
           class="calc-display-input">
       </div>
       <div class="calc-buttons">
         <table class="calc-table">
           <tr class="calc-buttons-row">
             <td>
-              <button type="button" class="number btn-hover-green btn">7</button>
+              <button value="7"  class="number btn-hover-green btn">7</button>
             </td>
             <td>
-              <button type="button" class="number btn-hover-green btn">8</button>
+              <button value="8"  class="number btn-hover-green btn">8</button>
             </td>
             <td>
-              <button type="button" class="number btn-hover-green btn">9</button>
+              <button value="9"  class="number btn-hover-green btn">9</button>
             </td>
             <td>
-              <button type="button" class="operator btn btn-hover-orange">-</button>
+              <button id="minus" value="-" class="operator btn btn-hover-orange">-</button>
             </td>
             <td>
-              <button type="button" class=" operator btn btn-hover-orange">*</button>
+              <button id="mult" value="*" class=" operator btn btn-hover-orange">*</button>
             </td>
             <td>
-              <button type="button" class="operator btn btn-hover-orange">/</button>
+              <button id="divide" value="/" class="operator btn btn-hover-orange">/</button>
             </td>
             <td>
-              <button type="button" class="operator btn btn-hover-orange">+</button>
+              <button value="+" id="plus" class="operator btn btn-hover-orange">+</button>
             </td>
           </tr>
           <tr class="calc-buttons-row">
             <td>
-              <button type="button" class="number btn-hover-green btn">4</button>
+              <button value="4" class="number btn-hover-green btn">4</button>
             </td>
             <td>
-              <button type="button" class="number btn-hover-green btn">5</button>
+              <button value="5" class="number btn-hover-green btn">5</button>
             </td>
             <td>
-              <button type="button" class="number btn-hover-green btn">6</button>
+              <button value="6"  class="number btn-hover-green btn">6</button>
             </td>
             <td>
-              <button type="button" class="clear-btn btn btn-hover-red" id="ce">ce</button>
+              <button class="clear-btn btn btn-hover-red" id="clear">ce</button>
             </td>
             <td>
-              <button type="button" class="clear-btn btn btn-hover-red" id="c">c</button>
+              <button class="clear-btn btn btn-hover-red" id="full-clear">c</button>
             </td>
             <td>
-              <button type="button" class="btn  btn-hover-orange" id="decimal">.</button>
+              <button value="." class="btn  btn-hover-orange" id="decimal">.</button>
             </td>
             <td>
-              <button type="button" class="operator btn btn-equal btn-hover-orange" id="result">=</button>
+              <button value="=" class="operator btn btn-equal btn-hover-orange" id="result">=</button>
             </td>
 
 
           </tr>
           <tr class="calc-buttons-row">
             <td>
-              <button type="button" class="number btn-hover-green btn">1</button>
+              <button value="1"  class="number btn-hover-green btn">1</button>
             </td>
             <td>
-              <button type="button" class="number btn-hover-green btn">2</button>
+              <button value="2"  class="number btn-hover-green btn">2</button>
             </td>
             <td>
-              <button type="button" class="number btn-hover-green btn">3</button>
+              <button value="3"  class="number btn-hover-green btn">3</button>
             </td>
             <td>
-              <button type="button" class="number btn-hover-green btn btn-long">0</button>
+              <button value="0"  class="number btn-hover-green btn btn-long">0</button>
 
             <td>
-              <button type="button" class="operator btn-hover-green btn btn-long">X<sup>y</sup></button>
+              <button id="degree" value="XY" class=" operator btn-hover-green btn btn-long">X<sup>y</sup></button>
             </td>
             <td>
-              <button type="button" class=" btn-hover-green btn btn-long" id='sqrt'>&#8730</button>
+              <button class="btn-hover-green btn btn-long" id='sqrt'>&#8730</button>
             </td>
             <td>
-              <button type="button" class=" btn-hover-green btn btn-long" id='negative'>&plusmn;</button>
+              <button class=" btn-hover-green btn btn-long" id='negative'>&plusmn;</button>
             </td>
         </table>
       </div>
     </div>
   </main>
-  <script src="main.js">
+  <script src="./dist/app.js">
   </script>
 </body>
 

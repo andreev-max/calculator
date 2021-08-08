@@ -9,6 +9,7 @@ body {
   padding-top: 150px;
 }
 .calc {
+  position: relative;
   background-color: #1c93ee;
   width: 680px;
   padding: 30px;
@@ -113,4 +114,30 @@ button {
   .btn-long {
     width: 132px;
   }
+}
+
+@keyframes shake {
+  15% {
+    transform: translateX(12px);
+  }
+  30% {
+    transform: translateX(-12px);
+  }
+  40% {
+    transform: translateX(7px);
+  }
+  50% {
+    transform: translateX(-7px);
+  }
+  65% {
+    transform: translateX(4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.shake {
+  animation: shake 0.5s ease;
+  animation-iteration-count: 1;
 }

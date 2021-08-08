@@ -1,0 +1,22 @@
+{
+  "name": "calculator",
+  "version": "1.0.0",
+  "description": "Task: ***https://github.com/rolling-scopes-school/tasks/blob/master/tasks/ready-projects/calculator.md***",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nAzdAc/calculator.git"
+  },
+  "author": "Max Andreev <nAzdAc15071996@mail.ru>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nAzdAc/calculator/issues"
+  },
+  "homepage": "https://github.com/nAzdAc/calculator#readme",
+  "devDependencies": {
+    "typescript": "^4.3.5"
+  }
+}
