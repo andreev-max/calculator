@@ -9,88 +9,39 @@
 </head>
 
 <body>
-  <main class="main">
-    <div class="calc">
-      <div class="calc-display">
-        <input disabled type="text" id="display" value="0" placeholder="000000000000000000"
-          class="calc-display-input">
+  <div class="calc">
+    <input disabled type="text" id="display" value="0" >
+    <div class="calc-buttons">
+      <div class="calc-row">
+        <button value="7" class="number btn">7</button>
+        <button value="8" class="number btn">8</button>
+        <button value="9" class="number btn">9</button>
+        <button id="minus" value="-" class="operator btn">-</button>
+        <button id="mult" value="*" class=" operator btn">*</button>
+        <button id="divide" value="/" class="operator btn">/</button>
+        <button value="+" id="plus" class="operator btn">+</button>
       </div>
-      <div class="calc-buttons">
-        <table class="calc-table">
-          <tr class="calc-buttons-row">
-            <td>
-              <button value="7"  class="number btn-hover-green btn">7</button>
-            </td>
-            <td>
-              <button value="8"  class="number btn-hover-green btn">8</button>
-            </td>
-            <td>
-              <button value="9"  class="number btn-hover-green btn">9</button>
-            </td>
-            <td>
-              <button id="minus" value="-" class="operator btn btn-hover-orange">-</button>
-            </td>
-            <td>
-              <button id="mult" value="*" class=" operator btn btn-hover-orange">*</button>
-            </td>
-            <td>
-              <button id="divide" value="/" class="operator btn btn-hover-orange">/</button>
-            </td>
-            <td>
-              <button value="+" id="plus" class="operator btn btn-hover-orange">+</button>
-            </td>
-          </tr>
-          <tr class="calc-buttons-row">
-            <td>
-              <button value="4" class="number btn-hover-green btn">4</button>
-            </td>
-            <td>
-              <button value="5" class="number btn-hover-green btn">5</button>
-            </td>
-            <td>
-              <button value="6"  class="number btn-hover-green btn">6</button>
-            </td>
-            <td>
-              <button class="clear-btn btn btn-hover-red" id="clear">ce</button>
-            </td>
-            <td>
-              <button class="clear-btn btn btn-hover-red" id="full-clear">c</button>
-            </td>
-            <td>
-              <button value="." class="btn  btn-hover-orange" id="decimal">.</button>
-            </td>
-            <td>
-              <button value="=" class="operator btn btn-equal btn-hover-orange" id="result">=</button>
-            </td>
+      <div class="calc-row">
+        <button value="4" class="number btn">4</button>
+        <button value="5" class="number btn">5</button>
+        <button value="6" class="number btn">6</button>
+        <button class="clear-btn btn" id="clear">ce</button>
+        <button class="clear-btn btn" id="full-clear">c</button>
+        <button value="." class="operator btn" id="decimal">.</button>
+        <button value="=" class="operator btn" id="result">=</button>
+      </div>
 
-
-          </tr>
-          <tr class="calc-buttons-row">
-            <td>
-              <button value="1"  class="number btn-hover-green btn">1</button>
-            </td>
-            <td>
-              <button value="2"  class="number btn-hover-green btn">2</button>
-            </td>
-            <td>
-              <button value="3"  class="number btn-hover-green btn">3</button>
-            </td>
-            <td>
-              <button value="0"  class="number btn-hover-green btn btn-long">0</button>
-
-            <td>
-              <button id="degree" value="XY" class=" operator btn-hover-green btn btn-long">X<sup>y</sup></button>
-            </td>
-            <td>
-              <button class="btn-hover-green btn btn-long" id='sqrt'>&#8730</button>
-            </td>
-            <td>
-              <button class=" btn-hover-green btn btn-long" id='negative'>&plusmn;</button>
-            </td>
-        </table>
+      <div class="calc-row">
+        <button value="1" class="number btn">1</button>
+        <button value="2" class="number btn">2</button>
+        <button value="3" class="number btn">3</button>
+        <button value="0" class="number btn">0</button>
+        <button id="degree" value="XY" class="operator btn">X<sup>y</sup></button>
+        <button class="operator btn" id='sqrt'>&#8730</button>
+        <button class="operator btn" id='negative'>&plusmn;</button>
       </div>
     </div>
-  </main>
+  </div>
   <script src="./dist/app.js">
   </script>
 </body>
