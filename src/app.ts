@@ -1,5 +1,5 @@
 const display = document.querySelector("input")!;
-const calcElement = document.querySelector('.calc')!;
+const calcElement = document.querySelector(".calc")!;
 const numbers = [...document.querySelectorAll(".number")]!;
 const plusButton = document.querySelector("#plus")!;
 const minusButton = document.querySelector("#minus")!;
@@ -39,12 +39,11 @@ function getDecimal(): void {
 
 function calcSquare(): void {
   if (+display.value < 0) {
-    console.log(calcElement)
     display.value = "Error";
     display.style.color = "red";
-    calcElement.classList.add('shake')
+    calcElement.classList.add("shake");
     setTimeout(() => {
-      calcElement.classList.remove('shake')
+      calcElement.classList.remove("shake");
       display.value = "0";
       display.style.color = "white";
     }, 1300);
@@ -105,9 +104,13 @@ function pressNumber(event: any): void {
 function pressDegree(): void {
   if (operationInMemory === "XY" && !isNumberInMemory) {
     if (currentNumberInMemory < 0) {
-      display.value = String(-Math.pow(currentNumberInMemory * (-1), Number(display.value)))
+      display.value = String(
+        -Math.pow(currentNumberInMemory * -1, Number(display.value))
+      );
     } else {
-      display.value = String(Math.pow(currentNumberInMemory, Number(display.value)))
+      display.value = String(
+        Math.pow(currentNumberInMemory, Number(display.value))
+      );
     }
   } else {
     operationInMemory = "XY";
@@ -124,7 +127,7 @@ function calcDegree(a: number, b: number): number {
   } else {
     a = Math.pow(a, b);
   }
-  return a
+  return a;
 }
 
 function pressPlus(): void {
@@ -176,16 +179,4 @@ function fullClear(): void {
   isNumberInMemory = false;
   operationInMemory = "";
   currentNumberInMemory = 0;
-}
-
-window.addEventListener("click", () => {
-  console.log("operationInMemory", operationInMemory);
-  console.log("isNumberInMemory", isNumberInMemory);
-  console.log("currentNumberInMemory", currentNumberInMemory);
-  console.log("display.value", display.value);
-  console.log("----------");
-});
-
-function animateAnswer() {
-
 }
